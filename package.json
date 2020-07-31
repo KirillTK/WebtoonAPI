@@ -1,6 +1,6 @@
 {
   "name": "webtoon-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webtoon parser",
   "main": "dist/bundle.js",
   "scripts": {
@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/KirillTK/WebtoonAPI#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0",
     "dom-parser": "^0.1.6",
-    "rollup": "^2.23.0",
+    "node-fetch": "^2.6.0",
     "ramda": "^0.27.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup": "^2.23.0",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-uglify": "^6.0.4"
   },
   "devDependencies": {

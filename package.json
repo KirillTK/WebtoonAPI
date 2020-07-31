@@ -1,7 +1,7 @@
 {
-  "name": "webtoonapi",
+  "name": "webtoon-parser",
   "version": "1.0.0",
-  "description": "Webtoon api",
+  "description": "Webtoon parser",
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup -c",
@@ -9,7 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KirillTK/WebtoonAPI.git"
+    "url": "git+https://github.com/KirillTK/WebtoonAPI.git",
+    "pushTags": "git push && git push --tags",
+    "version": "yarn build && git add --force dist/",
+    "postversion": "git reset --soft HEAD~1 && git reset dist/ && git commit -m \"v%npm_package_version%\"",
+    "release:major": "yarn version --major && yarn pushTags",
+    "release:minor": "yarn version --minor && yarn pushTags",
+    "release:patch": "yarn version --patch && yarn pushTags"
   },
   "keywords": [
     "Webtoon"
